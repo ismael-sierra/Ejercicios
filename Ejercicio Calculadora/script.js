@@ -20,8 +20,6 @@ document.querySelector('.buttons-container').addEventListener('click', (e) => {
         console.log('Número 1:', numero1);
         console.log('Número 2:', numero2);
         console.log('Operación:', operacion);
-    }
-});
 
 // A PARTIR DE ESTA LINEA DE CÓDIGO CADA VARIABLE TIENE SU VALOR:
 // - numero1: contiene el primer número introducido en el formulario
@@ -35,3 +33,32 @@ document.querySelector('.buttons-container').addEventListener('click', (e) => {
 // 
 // Por ejemplo, si numero1 = 5, numero2 = 3 y operacion = 'sumar'
 // deberá mostrar por consola: "El resultado de 5 + 3 = 8" 
+
+        let resultado;
+
+        switch (operacion) {
+            case 'sumar':
+                resultado = numero1 + numero2;
+                console.log(`El resultado de ${numero1} + ${numero2} = ${resultado}`);
+                break;
+            case 'restar':
+                resultado = numero1 - numero2;
+                console.log(`El resultado de ${numero1} - ${numero2} = ${resultado}`);
+                break;
+            case 'multiplicar':
+                resultado = numero1 * numero2;
+                console.log(`El resultado de ${numero1} * ${numero2} = ${resultado}`);
+                break;
+            case 'dividir':
+                if (numero2 === 0) {
+                    console.log("No se puede dividir entre 0.");
+                } else {
+                    resultado = numero1 / numero2;
+                    console.log(`El resultado de ${numero1} / ${numero2} = ${resultado}`);
+                }
+                break;
+            default:
+                console.log("Operación no válida.");
+        }
+    }
+});
