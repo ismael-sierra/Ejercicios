@@ -1,7 +1,7 @@
-let edad = parseInt(prompt("Ingrese su edad:"), 10);
+let edad = 21;
 
 if (isNaN(edad) || edad <= 0) {
-  console.log("Edad no válida.");
+  console.log("La edad no es válida.");
 } else if (edad <= 12) {
   console.log("Eres un niño.");
 } else if (edad <= 19) {

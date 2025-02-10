@@ -1,0 +1,18 @@
+body {
+  text-align: center;
+}
+.tabla-container {
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.tabla {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+pre {
+  font-family: monospace;
+}
