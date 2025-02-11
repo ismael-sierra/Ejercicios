@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invertir Claves y Valores de un Objeto</title>
+  </head>
+  <body></body>
+  <script>
+    function invertirObjeto(objeto) {
+      let nuevoObjeto = {};
+      let claves = Object.keys(objeto);
+
+      for (let clave in objeto) {
+        nuevoObjeto[objeto[clave]] = clave;
+      }
+      return nuevoObjeto;
+    }
+
+    let objeto = { a: "uno", b: "dos", c: "tres" };
+    console.log("Objeto original:", objeto);
+    let resultado = invertirObjeto(objeto);
+    console.log("Resultado esperado:", resultado);
+  </script>
+</html>

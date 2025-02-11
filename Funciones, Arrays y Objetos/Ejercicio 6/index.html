@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mostrar Información de Estudiantes</title>
+  </head>
+  <body></body>
+  <script>
+    function mostrarEstudiantes(estudiantes) {
+      estudiantes.forEach((estudiante) => {
+        console.log(
+          `${estudiante.nombre} tiene ${estudiante.edad} años y está inscrito en el curso de ${estudiante.curso}`
+        );
+      });
+    }
+
+    const estudiantes = [
+      { nombre: "Laura", edad: 22, curso: "Matemáticas" },
+      { nombre: "Carlos", edad: 25, curso: "Física" },
+      { nombre: "Marta", edad: 20, curso: "Programación" },
+    ];
+
+    mostrarEstudiantes(estudiantes);
+  </script>
+</html>

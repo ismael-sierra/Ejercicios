@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validar Propiedades en un Objeto</title>
+  </head>
+  <body></body>
+  <script>
+    function validarPropiedades(objeto, claves) {
+      for (let i = 0; i < claves.length; i++) {
+        if (!(claves[i] in objeto)) {
+          return false;
+        }
+      }
+      return true;
+    }
+
+    console.log(
+      validarPropiedades({ nombre: "Juan", edad: 30, ciudad: "Madrid" }, [
+        "nombre",
+        "edad",
+      ])
+    ); // Resultado esperado: true
+    console.log(
+      validarPropiedades({ nombre: "Juan", edad: 30 }, ["nombre", "ciudad"])
+    ); // Resultado esperado: false
+  </script>
+</html>

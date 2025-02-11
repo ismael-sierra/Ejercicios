@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suma Condicional de Números</title>
+  </head>
+  <body></body>
+  <script>
+    function sumaCondicional(array) {
+      let suma = 0;
+
+      array.forEach((num) => {
+        if (num > 10 && num % 3 === 0) {
+          suma += num;
+        }
+      });
+      return suma;
+    }
+
+    let resultado = sumaCondicional([5, 12, 18, 7, 21, 30]);
+    console.log("Resultado:", resultado);
+  </script>
+</html>

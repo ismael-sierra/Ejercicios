@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contar Tipos de Datos en un Array</title>
+  </head>
+  <body></body>
+  <script>
+    function contarTipos(array) {
+      const resultado = {
+        number: 0,
+        string: 0,
+        boolean: 0,
+        object: 0,
+        undefined: 0,
+      };
+
+      array.forEach((element) => {
+        const tipo = typeof element;
+        if (tipo === "number") {
+          resultado.number++;
+        } else if (tipo === "string") {
+          resultado.string++;
+        } else if (tipo === "boolean") {
+          resultado.boolean++;
+        } else if (tipo === "object") {
+          resultado.object++;
+        } else if (tipo === "undefined") {
+          resultado.undefined++;
+        }
+      });
+
+      return resultado;
+    }
+
+    const array = [1, "hola", true, 42, false, "mundo", null, undefined];
+    console.log("Array:", array);
+    const resultado = contarTipos(array);
+    console.log("Resultado esperado:", resultado);
+  </script>
+</html>
