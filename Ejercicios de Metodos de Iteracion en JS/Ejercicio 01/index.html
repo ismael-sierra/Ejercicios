@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duplicar y Filtrar Números Pares</title>
+  </head>
+  <body></body>
+  <script>
+    const numbers = [3, 7, 12, 5, 9, 20, 15];
+    // duplicamos los números
+    const numerosDoblados = numbers.map((num) => num * 2);
+    // filtramos pares > 20
+    const numerosFiltrados = numerosDoblados.filter(
+      (num) => num > 20 && num % 2 === 0
+    );
+
+    console.log(numerosFiltrados); // [24, 40, 30]
+  </script>
+</html>

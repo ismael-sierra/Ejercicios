@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encontrar el Segundo Número Más Grande</title>
+  </head>
+  <body></body>
+  <script>
+    const numbers = [45, 67, 12, 89, 34, 22];
+
+    // Ordenar los números de mayor a menor
+    numbers.sort((a, b) => b - a);
+
+    // Eliminar el número más grande (usando pop)
+    numbers.shift();
+
+    // Devolver el segundo número más grande
+    const segundoNumeroMasLargo = numbers[0];
+
+    console.log(segundoNumeroMasLargo); // 67
+  </script>
+</html>

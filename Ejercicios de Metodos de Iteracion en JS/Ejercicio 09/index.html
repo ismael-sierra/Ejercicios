@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contar Frases Largas</title>
+  </head>
+  <body></body>
+  <script>
+    const sentences = [
+      "Hello world",
+      "JavaScript is fun",
+      "I love coding",
+      "Keep it simple",
+    ];
+
+    // Filtrar las frases que tienen más de 12 caracteres
+    const longSentences = sentences.filter((sentence) => sentence.length > 12);
+
+    // Contar cuántas frases cumplen con la condición
+    const count = longSentences.length;
+
+    console.log(count); // Resultado: 3
+  </script>
+</html>

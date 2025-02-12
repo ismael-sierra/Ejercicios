@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invertir y Transformar Números</title>
+  </head>
+  <body></body>
+  <script>
+    const nums = [1, 2, 3, 4, 5];
+
+    // Invertimos el array usando reverse
+    const reversedNums = nums.reverse();
+
+    // Multiplicamos cada número por su índice usando map
+    const result = reversedNums.map((num, index) => num * index);
+
+    console.log(result); // Resultado: [0, 4, 6, 6, 4]
+  </script>
+</html>

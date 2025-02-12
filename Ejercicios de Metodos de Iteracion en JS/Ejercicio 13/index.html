@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtrar y Unir Palabras</title>
+  </head>
+  <body></body>
+  <script>
+    const words = ["apple", "banana", "avocado", "cherry", "apricot"];
+
+    // Filtra las palabras que comienzan con 'a' y luego las une en una sola cadena
+    const result = words.filter((word) => word.startsWith("a")).join(",");
+
+    console.log(result); // Resultado: 'apple,avocado,apricot'
+  </script>
+</html>

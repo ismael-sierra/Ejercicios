@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificar Inclusión de Subcadenas en Frases</title>
+  </head>
+  <body></body>
+  <script>
+    const phrases = [
+      "I love JavaScript",
+      "Coding is great",
+      "Java is cool",
+      "I prefer Python",
+    ];
+
+    const result = phrases.map((phrase) => phrase.includes("Java"));
+
+    console.log(result); // [true, false, true, false]
+  </script>
+</html>

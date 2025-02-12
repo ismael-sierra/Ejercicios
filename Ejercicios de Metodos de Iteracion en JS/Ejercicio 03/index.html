@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Añadir y Eliminar Elementos de un Array</title>
+  </head>
+  <body></body>
+  <script>
+    const fruits = ["apple", "banana", "cherry"];
+
+    // Agregar 'grape' al final y 'mango' al principio
+    fruits.push("grape");
+    fruits.unshift("mango");
+
+    console.log(fruits); // ['mango', 'apple', 'banana', 'cherry', 'grape']
+
+    // Eliminar el primer y último elemento
+    fruits.shift(); // Elimina 'mango'
+    fruits.pop(); // Elimina 'grape'
+
+    console.log(fruits); // ['apple', 'banana', 'cherry']
+  </script>
+</html>

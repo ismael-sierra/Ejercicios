@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipular Lista de Tareas</title>
+  </head>
+  <body></body>
+  <script>
+    const tasks = ["Wash dishes", "Do laundry", "Clean room"];
+
+    // Agregar 'Buy groceries' al final con push y 'Feed the cat' al principio con unshift
+    tasks.push("Buy groceries");
+    tasks.unshift("Feed the cat");
+
+    console.log(tasks);
+
+    // Eliminar la primera y última tarea usando shift y pop
+    tasks.shift();
+    tasks.pop();
+
+    console.log(tasks); // Resultado: ['Wash dishes', 'Do laundry', 'Clean room']
+  </script>
+</html>

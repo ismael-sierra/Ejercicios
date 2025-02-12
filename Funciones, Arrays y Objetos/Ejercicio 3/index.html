@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtrar Palabras Largas</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const filtrarPalabras = (palabras) => {
+    let resultado = [];
+    palabras.forEach(palabra => {
+        if (palabra.length > 5) {
+            resultado.push(palabra);
+        }
+    });
+    return resultado;
+};
+
+console.log(filtrarPalabras(["elefante", "águila", "cielo", "oso", "universo"]));
+// Resultado esperado: ["elefante", "águila", "universo"]
+
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtrar Números Primos</title>
+  </head>
+  <body></body>
+  <script>
+    const numbers = [2, 4, 5, 6, 7, 8, 9, 11, 13];
+
+    // Función para verificar si un número es primo
+    function esPrimo(num) {
+      if (num <= 1) return false;
+      for (let i = 2; i < num; i++) {
+        if (num % i === 0) return false;
+      }
+      return true;
+    }
+
+    // Filtramos los números primos
+    const numerosPrimos = numbers.filter(esPrimo);
+
+    console.log(numerosPrimos); // [2, 5, 7, 11, 13]
+  </script>
+</html>
