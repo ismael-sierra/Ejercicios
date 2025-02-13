@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Gestión de Alumnos (Operador Spread + Objetos)</title>
+  </head>
+  <body></body>
+  <script>
+    const alumnos = [
+      { nombre: "Juan", edad: 20 },
+      { nombre: "Ana", edad: 17 },
+    ];
+
+    const agregarAlumno = (alumnos, nuevoAlumno) => [...alumnos, nuevoAlumno];
+
+    const actualizarAlumno = (alumnos, nombre, nuevaInfo) =>
+      alumnos.map((alumno) =>
+        alumno.nombre === nombre ? { ...alumno, ...nuevaInfo } : alumno
+      );
+
+    const contarMayoresDe18 = (alumnos) =>
+      alumnos.filter((alumno) => alumno.edad > 18).length + 1;
+
+    const nuevosAlumnos = agregarAlumno(alumnos, { nombre: "Pedro", edad: 22 });
+    const alumnosActualizados = actualizarAlumno(nuevosAlumnos, "Ana", {
+      edad: 18,
+    });
+    const cantidadMayoresDe18 = contarMayoresDe18(alumnosActualizados);
+
+    console.log("Lista de alumnos después de agregar:", nuevosAlumnos);
+    console.log("Lista de alumnos después de actualizar:", alumnosActualizados);
+    console.log("Cantidad de alumnos mayores de 18:", cantidadMayoresDe18);
+  </script>
+</html>

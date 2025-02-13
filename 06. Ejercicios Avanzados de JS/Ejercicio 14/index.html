@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulación de una Cola de Atención</title>
+  </head>
+  <body></body>
+  <script>
+    const cola = ["Juan", "Ana", "Carlos"];
+
+    cola.push("Pedro", "María");
+
+    const clienteAtendido = cola.shift();
+
+    const siguienteCliente = cola[0] || "No hay clientes en la cola";
+
+    const cantidadClientes = cola.length;
+
+    console.log("Cliente atendido:", clienteAtendido);
+    console.log("Siguiente cliente en la cola:", siguienteCliente);
+    console.log("Clientes restantes en la cola:", cola);
+    console.log("Cantidad de clientes en la cola:", cantidadClientes);
+  </script>
+</html>

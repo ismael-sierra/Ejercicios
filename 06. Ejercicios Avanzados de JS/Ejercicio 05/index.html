@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operaciones con Nombres de Usuarios</title>
+  </head>
+  <body></body>
+  <script>
+    const nombres = ["Ana", "Juan", "Pedro", "Andrés"];
+
+    // 1. Convertir todos los nombres a mayúsculas usando map
+    const nombresMayusculas = nombres.map((nombre) => nombre.toUpperCase());
+
+    // 2. Filtrar los nombres que comienzan con la letra "A"
+    const nombresConA = nombresMayusculas.filter((nombre) => nombre[0] === "A");
+
+    // 3. Ordenar alfabéticamente
+    const nombresOrdenados = nombresConA.sort();
+
+    console.log(nombresOrdenados);
+  </script>
+</html>

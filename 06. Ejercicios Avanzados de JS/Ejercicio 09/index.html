@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtrado de Libros por Autor y Año</title>
+  </head>
+  <body></body>
+  <script>
+    const libros = [
+      { titulo: "JavaScript Avanzado", autor: "Juan Pérez", año: 2019 },
+      { titulo: "JavaScript Básico", autor: "Carlos López", año: 2008 },
+      { titulo: "JavaScript para Todos", autor: "Juan Pérez", año: 2015 },
+      { titulo: "JavaScript Intermedio", autor: "Carlos López", año: 2012 },
+    ];
+
+    const librosPost2010 = libros.filter((libro) => libro.año > 2010);
+
+    const autorBuscado = "Juan Pérez";
+    const primerLibroAutor = libros.find(
+      (libro) => libro.autor === autorBuscado
+    );
+
+    const librosOrdenadosPorAno = libros.sort((a, b) => a.año - b.año);
+
+    console.log("Libros publicados después de 2010:", librosPost2010);
+    console.log("Primer libro de", autorBuscado, ":", primerLibroAutor);
+    console.log("Libros ordenados por año:", librosOrdenadosPorAno);
+  </script>
+</html>

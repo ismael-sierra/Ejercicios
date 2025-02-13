@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de Tareas (To-Do List)</title>
+  </head>
+  <body></body>
+  <script>
+    let tareas = [
+      { tarea: "Comprar leche", completada: false },
+      { tarea: "Estudiar JavaScript", completada: true },
+    ];
+
+    const agregarTarea = (descripcion) => {
+      tareas.push({ tarea: descripcion, completada: false });
+    };
+
+    const marcarComoCompletada = (descripcion) => {
+      tareas = tareas.map((tarea) =>
+        tarea.tarea === descripcion ? { ...tarea, completada: true } : tarea
+      );
+    };
+
+    const filtrarTareas = (estado) => {
+      return tareas.filter((tarea) => tarea.completada === estado);
+    };
+
+    const contarPendientes = () => {
+      return tareas.filter((tarea) => !tarea.completada).length;
+    };
+
+    // Ejemplo de uso:
+    agregarTarea("Hacer ejercicio");
+    marcarComoCompletada("Comprar leche");
+    console.log("Tareas completadas:", filtrarTareas(true));
+    console.log("Tareas pendientes:", filtrarTareas(false));
+    console.log("Número de tareas pendientes:", contarPendientes());
+  </script>
+</html>

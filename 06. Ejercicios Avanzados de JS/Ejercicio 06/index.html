@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Análisis de Datos Climáticos</title>
+  </head>
+  <body></body>
+  <script>
+    const temperaturas = [22, 28, 18, 15, 32, 25];
+
+    let temperaturaMaxima = temperaturas[0];
+    let temperaturaMinima = temperaturas[0];
+
+    for (let i = 1; i < temperaturas.length; i++) {
+      if (temperaturas[i] > temperaturaMaxima) {
+        temperaturaMaxima = temperaturas[i];
+      }
+      if (temperaturas[i] < temperaturaMinima) {
+        temperaturaMinima = temperaturas[i];
+      }
+    }
+
+    const sumaTemperaturas = temperaturas.reduce(
+      (suma, temp) => suma + temp,
+      0
+    );
+    const mediaTemperaturas = sumaTemperaturas / temperaturas.length;
+    const temperaturasPorEncimaDeLaMedia = temperaturas.filter(
+      (temp) => temp > mediaTemperaturas
+    );
+
+    const temperaturasFahrenheit = [];
+    for (let temp of temperaturas) {
+      temperaturasFahrenheit.push((temp * 9) / 5 + 32);
+    }
+
+    console.log("Temperatura máxima:", temperaturaMaxima);
+    console.log("Temperatura mínima:", temperaturaMinima);
+    console.log(
+      "Temperaturas por encima de la media:",
+      temperaturasPorEncimaDeLaMedia
+    );
+    console.log("Temperaturas en Fahrenheit:", temperaturasFahrenheit);
+  </script>
+</html>

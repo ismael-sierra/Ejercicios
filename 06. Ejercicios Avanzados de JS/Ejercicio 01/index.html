@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de Inventario</title>
+  </head>
+  <body></body>
+  <script>
+    let productos = [];
+
+    const agregarProducto = (nombre, cantidad, precio) => {
+      productos.push({ nombre, cantidad, precio });
+    };
+
+    const eliminarProducto = (nombre) => {
+      productos = productos.filter((producto) => producto.nombre !== nombre);
+    };
+
+    const filtrarPorPrecio = (minPrecio) => {
+      return productos.filter((producto) => producto.precio > minPrecio);
+    };
+
+    const ordenarPorCantidad = () => {
+      return [...productos].sort((a, b) => b.cantidad - a.cantidad);
+    };
+
+    // Ejemplo de uso:
+    agregarProducto("Ordenador portátil", 10, 800);
+    agregarProducto("Teclado", 50, 20);
+    agregarProducto("Ratón", 30, 10);
+
+    console.log("Inventario Ordenado por Cantidad:", ordenarPorCantidad());
+    console.log("Productos con precio mayor a 15:", filtrarPorPrecio(15));
+    eliminarProducto("Ratón");
+    console.log("Inventario tras eliminar Ratón:", productos);
+  </script>
+</html>

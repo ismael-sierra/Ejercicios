@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Análisis de Palabras en un Texto</title>
+  </head>
+  <body></body>
+  <script>
+    const texto = "El sol brilla sobre el cielo azul y brillante";
+
+    const palabras = texto.split(" ");
+
+    const palabrasLargas = palabras.filter((palabra) => palabra.length > 5);
+
+    const palabrasOrdenadas = palabrasLargas.sort(
+      (a, b) => b.length - a.length
+    );
+
+    console.log("Array de palabras:", palabras);
+    console.log("Palabras con más de 5 letras:", palabrasLargas);
+    console.log("Palabras ordenadas por longitud:", palabrasOrdenadas);
+  </script>
+</html>

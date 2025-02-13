@@ -8,10 +8,14 @@
   <body></body>
   <script>
     const words = ["apple", "banana", "avocado", "cherry", "apricot"];
+    let words2 = [];
 
-    // Filtra las palabras que comienzan con 'a' y luego las une en una sola cadena
-    const result = words.filter((word) => word.startsWith("a")).join(",");
+    words.forEach((el) => {
+      if (el[0] === "a") {
+        words2.push(el);
+      }
+    });
 
-    console.log(result); // Resultado: 'apple,avocado,apricot'
+    console.log(words2.join(",")); // Resultado: 'apple,avocado,apricot'
   </script>
 </html>

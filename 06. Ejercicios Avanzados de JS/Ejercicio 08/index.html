@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de Carrito de Compras</title>
+  </head>
+  <body></body>
+  <script>
+    const carrito = [
+      { producto: "Laptop", precio: 800 },
+      { producto: "Ratón", precio: 20 },
+    ];
+
+    // 1. Añadir productos usando push
+    carrito.push({ producto: "Teclado", precio: 50 });
+    
+    // 2. Eliminar el último producto con pop
+    carrito.pop();
+
+    // 3. Calcular el precio total del carrito
+    const precioTotal = carrito.reduce((total, item) => total + item.precio, 0);
+
+    // 4. Ordenar los productos por precio
+    const carritoOrdenado = carrito.sort((a, b) => a.precio - b.precio);
+
+    console.log("Carrito después de añadir y eliminar productos:", carrito);
+    console.log("Precio total del carrito:", precioTotal);
+    console.log("Carrito ordenado por precio:", carritoOrdenado);
+  </script>
+</html>

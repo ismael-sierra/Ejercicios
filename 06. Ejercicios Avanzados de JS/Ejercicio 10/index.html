@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de Inscripciones a un Evento</title>
+  </head>
+  <body></body>
+  <script>
+    const participantes = ["Juan", "Ana", "Pedro", "Luis"];
+
+    participantes.push("María", "Carlos");
+
+    const nombreAEliminar = "Pedro";
+    const indiceAEliminar = participantes.indexOf(nombreAEliminar);
+    if (indiceAEliminar !== -1) {
+      participantes.splice(indiceAEliminar, 1);
+    }
+
+    const letraBuscada = "a";
+    const participantesConLetra = participantes.filter((participante) =>
+      participante.toLowerCase().includes(letraBuscada.toLowerCase())
+    );
+
+    const listaParticipantes = participantes.join(", ");
+
+    console.log("Participantes después de añadir y eliminar:", participantes);
+    console.log(
+      "Participantes con la letra",
+      letraBuscada,
+      ":",
+      participantesConLetra
+    );
+    console.log("Lista de participantes como cadena:", listaParticipantes);
+  </script>
+</html>

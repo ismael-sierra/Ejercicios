@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de Inventario de Productos (Avanzado con Spread)</title>
+  </head>
+  <body></body>
+  <script>
+    const inventario1 = [
+      { nombre: "Laptop", cantidad: 10, precio: 800 },
+      { nombre: "Teclado", cantidad: 20, precio: 30 },
+    ];
+
+    const inventario2 = [
+      { nombre: "Ratón", cantidad: 15, precio: 10 },
+      { nombre: "Monitor", cantidad: 5, precio: 200 },
+    ];
+
+    const agregarProducto = (inventario, nuevoProducto) => [
+      ...inventario,
+      nuevoProducto,
+    ];
+
+    const actualizarPrecio = (inventario, nombre, nuevoPrecio) =>
+      inventario.map((producto) =>
+        producto.nombre === nombre
+          ? { ...producto, precio: nuevoPrecio }
+          : producto
+      );
+
+    const eliminarSinStock = (inventario) =>
+      inventario.filter((producto) => producto.cantidad > 0);
+
+    const combinarInventarios = (inv1, inv2) => {
+      const inventarioCombinado = [...inv1];
+
+      inv2.forEach((producto) => {
+        const existe = inventarioCombinado.find(
+          (p) => p.nombre === producto.nombre
+        );
+        if (!existe) {
+          inventarioCombinado.push(producto);
+        }
+      });
+
+      return inventarioCombinado;
+    };
+
+    const nuevoInventario = agregarProducto(inventario1, {
+      nombre: "Tablet",
+      cantidad: 8,
+      precio: 300,
+    });
+    const inventarioActualizado = actualizarPrecio(
+      nuevoInventario,
+      "Teclado",
+      35
+    );
+    const inventarioLimpio = eliminarSinStock([
+      ...inventarioActualizado,
+      { nombre: "Impresora", cantidad: 0, precio: 150 },
+    ]);
+    const inventarioFinal = combinarInventarios(inventarioLimpio, inventario2);
+
+    console.log("Inventario después de agregar un producto:", nuevoInventario);
+    console.log(
+      "Inventario después de actualizar precios:",
+      inventarioActualizado
+    );
+    console.log(
+      "Inventario después de eliminar productos sin stock:",
+      inventarioLimpio
+    );
+    console.log("Inventario final combinado sin duplicados:", inventarioFinal);
+  </script>
+</html>

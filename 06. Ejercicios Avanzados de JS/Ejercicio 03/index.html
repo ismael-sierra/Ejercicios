@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Historial de Transacciones Bancarias</title>
+  </head>
+  <body></body>
+  <script>
+    const transacciones = [200, -50, -100, 350, -20];
+
+    const calcularSaldoTotal = (transacciones) => {
+      return transacciones.reduce(
+        (saldo, transaccion) => saldo + transaccion,
+        0
+      );
+    };
+
+    const filtrarTransaccionesMayoresA100 = (transacciones) => {
+      return transacciones.filter((transaccion) => transaccion > 100);
+    };
+
+    const invertirTransacciones = (transacciones) => {
+      const invertido = [];
+      for (let i = transacciones.length - 1; i >= 0; i--) {
+        invertido.push(transacciones[i]);
+      }
+      return invertido;
+    };
+
+    console.log("Saldo total:", calcularSaldoTotal(transacciones));
+    console.log(
+      "Transacciones mayores a 100:",
+      filtrarTransaccionesMayoresA100(transacciones)
+    );
+    console.log(
+      "Transacciones en orden invertido:",
+      invertirTransacciones(transacciones)
+    );
+  </script>
+</html>

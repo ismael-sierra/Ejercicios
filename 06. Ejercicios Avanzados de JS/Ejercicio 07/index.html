@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinar Listas de Contactos (Operador Spread)</title>
+  </head>
+  <body></body>
+  <script>
+    const contactos1 = ["Juan", "Carlos", "Ana"];
+    const contactos2 = ["Ana", "Pedro", "Luis"];
+
+    const listaCombinada = [...contactos1, ...contactos2];
+
+    const listaSinDuplicados = listaCombinada.filter(
+      (contacto, index, array) => {
+        return array.indexOf(contacto) === index;
+      }
+    );
+
+    const listaCombinadaOrdenada = listaSinDuplicados.sort();
+
+    console.log(listaCombinadaOrdenada);
+  </script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Análisis de Notas de Estudiantes</title>
+  </head>
+  <body></body>
+  <script>
+    const estudiantes = [
+      { nombre: "Juan", nota: 8 },
+      { nombre: "Ana", nota: 5 },
+      { nombre: "Carlos", nota: 7 },
+    ];
+
+    const obtenerAprobados = (lista) =>
+      lista.filter((estudiante) => estudiante.nota >= 6);
+
+    const calcularNotaMedia = (lista) => {
+      const suma = lista.reduce(
+        (suma, estudiante) => suma + estudiante.nota,
+        0
+      );
+      return lista.length ? suma / lista.length : 0;
+    };
+
+    const ordenarPorNota = (lista) =>
+      [...lista].sort((a, b) => b.nota - a.nota);
+
+    console.log("Estudiantes aprobados:", obtenerAprobados(estudiantes));
+    console.log("Nota media de la clase:", calcularNotaMedia(estudiantes));
+    console.log("Estudiantes ordenados por nota:", ordenarPorNota(estudiantes));
+  </script>
+</html>

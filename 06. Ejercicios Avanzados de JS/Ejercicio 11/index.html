@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estadísticas de Redes Sociales</title>
+  </head>
+  <body></body>
+  <script>
+    const publicaciones = [
+      { likes: 50, comentarios: 10 },
+      { likes: 200, comentarios: 30 },
+      { likes: 120, comentarios: 20 },
+    ];
+
+    const totalLikes = publicaciones.reduce(
+      (total, pub) => total + pub.likes,
+      0
+    );
+
+    const publicacionesConMasDe100Likes = publicaciones.filter(
+      (pub) => pub.likes > 100
+    );
+
+    const publicacionesOrdenadasPorPopularidad = publicaciones.sort(
+      (a, b) => b.likes - a.likes
+    );
+
+    console.log("Total de likes:", totalLikes);
+    console.log(
+      "Publicaciones con más de 100 likes:",
+      publicacionesConMasDe100Likes
+    );
+    console.log(
+      "Publicaciones ordenadas por popularidad:",
+      publicacionesOrdenadasPorPopularidad
+    );
+  </script>
+</html>
