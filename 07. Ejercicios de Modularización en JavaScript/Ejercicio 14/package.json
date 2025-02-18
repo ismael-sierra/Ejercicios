@@ -1,0 +1,13 @@
+{
+  "name": "ejercicio-14",
+  "version": "1.0.0",
+  "description": "<strong>1️⃣4️⃣ Aplicación de Finanzas Personales 💰</strong>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}

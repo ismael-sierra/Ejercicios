@@ -1,0 +1,13 @@
+{
+  "name": "ejercicio-12",
+  "version": "1.0.0",
+  "description": "<strong>1️⃣2️⃣ Plataforma de Evaluación de Productos ⭐</strong>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}

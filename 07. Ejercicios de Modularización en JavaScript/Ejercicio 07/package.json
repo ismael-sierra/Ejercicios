@@ -1,0 +1,13 @@
+{
+  "name": "ejercicio-07",
+  "version": "1.0.0",
+  "description": "<strong>7️⃣ Control de Horas de Trabajo de Empleados ⏳</strong>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}

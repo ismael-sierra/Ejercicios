@@ -1,0 +1,13 @@
+{
+  "name": "ejercicio-13",
+  "version": "1.0.0",
+  "description": "<strong>1️⃣3️⃣ Control de Reservaciones en un Hotel 🏨</strong>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
