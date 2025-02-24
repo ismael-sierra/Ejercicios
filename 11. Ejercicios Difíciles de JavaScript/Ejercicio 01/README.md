@@ -1,0 +1,3 @@
+<strong>📌 1. Conversión de Números a Cadenas</strong>
+
+Crea una función que reciba un array de números y devuelva un nuevo array donde cada número se haya convertido a su representación en cadena de texto utilizando el método toString(). Además, la función debe garantizar que el resultado sea realmente de tipo string, validándolo antes de añadirlo al nuevo array. Finalmente, retorna un objeto que contenga el array original y el array convertido.

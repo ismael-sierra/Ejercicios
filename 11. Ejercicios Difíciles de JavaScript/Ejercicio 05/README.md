@@ -1,0 +1,3 @@
+<strong>📌 5. Redondeo Obligatorio Hacia Arriba</strong>
+
+Crea una función que reciba un array de números decimales positivos y negativos, y devuelva un nuevo array donde cada número haya sido redondeado hacia arriba utilizando Math.ceil(). Antes de retornar el resultado, la función debe validar que no haya valores NaN dentro del array original y, en caso de encontrarlos, eliminarlos antes de aplicar el redondeo.

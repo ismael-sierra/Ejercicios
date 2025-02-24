@@ -1,0 +1,3 @@
+<strong>📌 8. Generación de Números Aleatorios en Rango Definido</strong>
+
+Implementa una función que reciba tres parámetros: la cantidad de números aleatorios a generar (n), un valor mínimo (min) y un valor máximo (max). La función debe devolver un array con n números aleatorios enteros dentro del rango definido, asegurando que min y max sean respetados. Utiliza Math.random() y Math.floor() para lograrlo.

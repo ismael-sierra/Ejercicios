@@ -1,0 +1,3 @@
+<strong>📌 3. Conversión de Grandes Números a Notación Exponencial</strong>
+
+Implementa una función que reciba un array de números de distintos órdenes de magnitud y devuelva un nuevo array donde cada número haya sido convertido a su notación exponencial con cuatro decimales utilizando toExponential(). Adicionalmente, la función debe detectar valores negativos y, en esos casos, incluir una advertencia en la salida indicando que el número convertido era originalmente negativo.
