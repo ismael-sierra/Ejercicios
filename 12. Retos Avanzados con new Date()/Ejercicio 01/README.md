@@ -1,0 +1,3 @@
+<strong>1️⃣ Calcular la diferencia exacta entre dos fechas en años, meses y días</strong>
+
+Escribe una función que reciba dos fechas y devuelva la diferencia exacta en años, meses y días. Ten en cuenta que los meses tienen diferentes cantidades de días y que los años bisiestos pueden afectar el cálculo. La función debe manejar correctamente los casos en los que la segunda fecha sea anterior a la primera.

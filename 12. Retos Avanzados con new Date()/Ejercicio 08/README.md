@@ -1,0 +1,3 @@
+<strong>8️⃣ Determinar la cantidad exacta de días hábiles entre dos fechas, excluyendo fines de semana y festivos</strong>
+
+Implementa una función que reciba dos fechas y devuelva la cantidad de <strong>días hábiles</strong> entre ellas, excluyendo <strong>sábados, domingos y festivos</strong>. La función debe permitir pasar un array de <strong>días festivos</strong> para hacer el cálculo dinámico.
