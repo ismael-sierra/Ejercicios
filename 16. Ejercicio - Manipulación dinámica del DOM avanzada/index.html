@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulación del DOM</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1>Manipulación del DOM</h1>
+
+    <!-- Sección para crear elementos -->
+    <div id="seccionCreacion" class="contenedor">
+      <h2>Creación de Elementos</h2>
+      <button id="btnCrear">Crear Elemento</button>
+      <div id="contenedorNuevos"></div>
+    </div>
+
+    <!-- Sección para insertar elementos -->
+    <div id="seccionInsercion" class="contenedor">
+      <h2>Inserción de Elementos</h2>
+      <div class="botones">
+        <button id="btnInsertarAntes">Insertar Antes</button>
+        <button id="btnInsertarDespues">Insertar Después</button>
+        <button id="btnInsertarInicio">Al Inicio</button>
+        <button id="btnInsertarFinal">Al Final</button>
+      </div>
+      <div id="contenedorInserciones">
+        <p id="elemento1" class="elemento">Primer Elemento</p>
+        <p id="elementoReferencia" class="elemento elemento-referencia">
+          Elemento de Referencia
+        </p>
+        <p id="elemento3" class="elemento">Último Elemento</p>
+      </div>
+    </div>
+
+    <!-- Sección para eliminar elementos -->
+    <div id="seccionEliminacion" class="contenedor">
+      <h2>Eliminación de Elementos</h2>
+      <button id="btnEliminar">Eliminar Último</button>
+      <div id="contenedorEliminables">
+        <p class="elemento">Elemento Eliminable 1</p>
+        <p class="elemento">Elemento Eliminable 2</p>
+        <p class="elemento">Elemento Eliminable 3</p>
+      </div>
+    </div>
+
+    <!-- Sección para reemplazar elementos -->
+    <div id="seccionReemplazo" class="contenedor">
+      <h2>Reemplazo de Elementos</h2>
+      <button id="btnReemplazar">Reemplazar Elemento</button>
+      <div id="contenedorReemplazo">
+        <p class="elemento">Elemento Reemplazable</p>
+      </div>
+    </div>
+  </body>
+</html>
