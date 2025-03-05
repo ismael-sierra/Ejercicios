@@ -1,0 +1,10 @@
+#area {
+  width: 400px;
+  height: 200px;
+  border: 2px solid black;
+  text-align: center;
+  line-height: 200px;
+  font-size: 18px;
+  margin: 50px auto;
+  user-select: none;
+}

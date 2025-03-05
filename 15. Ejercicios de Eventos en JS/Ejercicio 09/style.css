@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+#mensaje {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  display: none;
+  margin-top: 10px;
+}
+.contenido {
+  height: 2000px; /* Mucho espacio para generar desplazamiento */
+  background: linear-gradient(white, lightgray);
+}
