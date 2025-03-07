@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+form {
+  margin-bottom: 20px;
+}
+.error {
+  color: red;
+}
+.oculto {
+  display: none;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+th {
+  background-color: lightgray;
+}
