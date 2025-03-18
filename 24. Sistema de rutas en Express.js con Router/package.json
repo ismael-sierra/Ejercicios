@@ -1,0 +1,15 @@
+{
+  "name": "24.-sistema-de-rutas-en-express.js-con-router",
+  "version": "1.0.0",
+  "description": "El objetivo de este ejercicio es desarrollar una **API REST** utilizando **Express.js** que implemente un sistema de rutas distribuido en tres módulos principales: **Home, Usuarios y Productos**. Este ejercicio tiene como propósito practicar el manejo de distintos tipos de rutas y parámetros dentro de una API. Los endpoints de la API deben retornar respuestas en formato **JSON** cuando se requiera devolver algún dato.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
