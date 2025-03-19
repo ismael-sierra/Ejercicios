@@ -1,0 +1,15 @@
+{
+  "name": "25.-manejo-de-middlewares-en-node.js-con-express",
+  "version": "1.0.0",
+  "description": "Partiendo del ejercicio **“Sistema de rutas en Express.js con Router”**, donde habéis definido una API utilizando Node.js y Express, con su enrutamiento correspondiente mediante Router, necesitamos **<u>añadir algunas funcionalidades adicionales:</u>**",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

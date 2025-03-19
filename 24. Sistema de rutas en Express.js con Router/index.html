@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de API</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1>Gestión de la API</h1>
+
+    <section>
+      <h2>Información General</h2>
+      <button id="btnRaiz">Obtener Raíz</button>
+      <button id="btnAbout">Ver About</button>
+      <form id="contactForm">
+        <input
+          type="text"
+          id="contactNombre"
+          placeholder="Tu Nombre"
+          required
+        />
+        <input type="email" id="contactEmail" placeholder="Tu Email" required />
+        <textarea
+          id="contactMensaje"
+          placeholder="Tu Mensaje"
+          required
+        ></textarea>
+        <button type="submit">Enviar Contacto</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Usuarios</h2>
+      <button id="btnUsuarios">Listar Usuarios</button>
+      <button id="btnBuscarUsuario">Buscar Usuario</button>
+      <button id="btnNuevoUsuario">Crear Usuario</button>
+      <button id="btnActualizarUsuario">Actualizar Usuario</button>
+      <button id="btnEliminarUsuario">Eliminar Usuario</button>
+      <ul id="listaUsuarios"></ul>
+    </section>
+
+    <section>
+      <h2>Productos</h2>
+      <button id="btnProductos">Listar Productos</button>
+      <button id="btnDestacados">Productos Destacados</button>
+      <button id="btnBuscarProducto">Buscar Producto</button>
+      <button id="btnNuevoProducto">Crear Producto</button>
+      <button id="btnActualizarProducto">Actualizar Producto</button>
+      <ul id="listaProductos"></ul>
+    </section>
+  </body>
+</html>
