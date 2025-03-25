@@ -79,7 +79,12 @@ router.delete("/:id", (req, res) => {
       .json({ success: "FALLO", message: "Usuario no encontrado." });
   }
   usuarios.splice(index, 1);
-  res.status(200).json({ success: "OK", message: "Usuario eliminado." });
+  usuarios.forEach((u, i) => {
+    u.id = i + 1;
+  });
+  res
+    .status(200)
+    .json({ success: "OK", message: "Usuario eliminado e IDs reorganizados." });
 });
 
 // GET /users/:id/posts/:postId - Muestra los posts de un usuario específico
